@@ -7,7 +7,7 @@ X = np.linspace(0, 2 * np.pi, 100).reshape(-1, 1)
 xt = np.array([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi]).reshape(-1, 1)
 xt = np.array([0.2, 1.1, 2.7, 4.5, 5.7]).reshape(-1, 1)
 yt = np.sin(xt).reshape(-1, 1)
-print(np.mean(yt))
+
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import (
     DotProduct,
